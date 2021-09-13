@@ -4,7 +4,9 @@ if( valor == "123456" )
 {
     alert("La contraseña es correcta");
 }
-else
+else if(valor == "123" || valor == "1234")
 {
-    alert("Contraseña no válida: [" + valor + "]");
+    alert("Contraseña no válida: [" + valor + "] pero estas cerca");
+}else{
+    alert("Estas frío");
 }

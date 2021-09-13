@@ -11,6 +11,9 @@ const libroReact = {
     formatos: ["PDF", "ePub", "Mobi"],
     precio: 17.99,
     publicado: false,
+    leer: function () {//EJEMPLO DE UN MÉTODO DENTRO DE UN OBJETO
+        document.write("He leído el libro de React.js y estoy accediendo al métedo del objeto :3");
+    },
 };
 
 //Acceso a las propiedades de un objeto
@@ -23,4 +26,7 @@ libroReact.paginas = 150;
 
 //Visualizamos los cambios
 document.write(libroReact.titulo + " es el nuevo título del libro </br>");
-document.write(libroReact["paginas"] + " es el total de páginas actualizado"); 
+document.write(libroReact["paginas"] + " es el total de páginas actualizado</br></br>"); 
+
+
+libroReact.leer(); //Accedemos al método que definimos

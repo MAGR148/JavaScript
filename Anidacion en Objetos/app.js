@@ -30,19 +30,19 @@ const coche2 = { marca: "Ford", modelo: "Focus" };
 const coche3 = coche1
 
 if(coche1 === coche2){
-    document.write("Primer True");
+    document.write("Primer True </br>");
 }else{
-    document.write("Primer False");
+    document.write("Primer False </br>");
 }
 if(coche1.modelo === coche2.modelo){
-    document.write("Segundo True");
+    document.write("Segundo True </br>");
 }else{
-    document.write("Segundo False");
+    document.write("Segundo False </br>");
 }
 if(coche1 === coche3){
-    document.write("Tercer True");
+    document.write("Tercer True </br>");
 }else{
-    document.write("Tercer False");
+    document.write("Tercer False </br>");
 }
 
  

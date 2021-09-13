@@ -21,4 +21,28 @@ const libro = {
 document.write(libro.autor.nombre + "</br>"); 
 document.write(libro["autor"]["edad"] + "</br>"); 
 document.write(libro["editorial"].web + "</br>"); 
-document.write(libro.autor["contacto"].twitch + "</br>"); 
+document.write(libro.autor["contacto"].twitch + "</br>");
+
+
+//Igualdad entre objetos
+const coche1 = { marca: "Ford", modelo: "Focus" };
+const coche2 = { marca: "Ford", modelo: "Focus" };
+const coche3 = coche1
+
+if(coche1 === coche2){
+    document.write("Primer True");
+}else{
+    document.write("Primer False");
+}
+if(coche1.modelo === coche2.modelo){
+    document.write("Segundo True");
+}else{
+    document.write("Segundo False");
+}
+if(coche1 === coche3){
+    document.write("Tercer True");
+}else{
+    document.write("Tercer False");
+}
+
+ 

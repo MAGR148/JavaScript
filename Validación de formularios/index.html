@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Válidación de un Fórmulario con JS</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
 </head>
 <body>
     
@@ -15,9 +16,11 @@
         </div>
         <div>
             <label for="pass">Contraseña</label>
-            <input type="text" id="pass">
+            <input type="password" id="pass">
         </div>
+        <input type="submit" onclick="return enviarFormulario()" value="Enviar">
     </form>
+    <div id="error"></div>
 
     <script src="app.js"></script>    
 </body>
